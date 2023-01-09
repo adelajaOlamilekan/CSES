@@ -6,6 +6,8 @@ Approach1:  Sort the number
             While traversing the list:
             the missing number is found when next number is not 1 from previous number
 
+Time Complexity:    O(n)
+Space Complexity:   O(n)
 */
 
 #include<iostream>
