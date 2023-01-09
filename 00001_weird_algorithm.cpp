@@ -8,6 +8,9 @@ Approach:   Check if n is odd or even,
             perform the appropriate operation, 
             update n,
             repeat until n is 1
+
+Time complexity:    O(n)
+Space complexity:   O(1)
 */
 
 #include<iostream>
