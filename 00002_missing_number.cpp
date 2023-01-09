@@ -18,41 +18,45 @@ Space Complexity:   O(n)
 #include<vector>
 
 //Approach1
-// int main(){
-//     int n = 0, currentNo = 0;
-//     std::cin>>n;
-
-//     //Setting the default value(zero) for each number position
-//     std::vector<int> nums(n, 0);
-
-//     //Setting the values of the vector
-//     while(std::cin>>currentNo)
-//         nums[currentNo-1] = currentNo;
-
-//     //Checking for the missing value
-//     int IndexOfpotentialMissingValue = 0;
-//     while(nums[IndexOfpotentialMissingValue] != 0 && IndexOfpotentialMissingValue < n)
-//         ++IndexOfpotentialMissingValue;
-    
-//     //Printing the missing value;
-//     int actualMissingValue = IndexOfpotentialMissingValue+1;
-//     std::cout << actualMissingValue;
-
-//     return 0;
-// }
-
-//Approach2
-
 int main(){
-    long long n = 0, currentNo= 0, expectedSumOfN = 0, actualSumofN = 0;
+    std::ios_base::sync_with_stdio(false);
+    std::cin.tie(NULL);
+    int n = 0, currentNo = 0;
+    std::cin>>n;
 
-    std::cin >> n;
-    expectedSumOfN = n*(n+1)/2; 
-    while(std::cin>>currentNo){
-        actualSumofN+=currentNo;
-    }
+    //Setting the default value(zero) for each number position
+    std::vector<int> nums(n, 0);
 
-    std::cout << expectedSumOfN-actualSumofN;
+    //Setting the values of the vector
+    while(std::cin>>currentNo)
+        nums[currentNo-1] = currentNo;
+
+    //Checking for the missing value
+    int IndexOfpotentialMissingValue = 0;
+    while(nums[IndexOfpotentialMissingValue] != 0 && IndexOfpotentialMissingValue < n)
+        ++IndexOfpotentialMissingValue;
+    
+    //Printing the missing value;
+    int actualMissingValue = IndexOfpotentialMissingValue+1;
+    std::cout << actualMissingValue;
 
     return 0;
 }
+
+//Approach2
+
+// int main(){
+//     std::ios_base::sync_with_stdio(false);
+//     std::cin.tie(NULL);
+//     long long n = 0, currentNo= 0, expectedSumOfN = 0, actualSumofN = 0;
+
+//     std::cin >> n;
+//     expectedSumOfN = n*(n+1)/2; 
+//     while(std::cin>>currentNo){
+//         actualSumofN+=currentNo;
+//     }
+
+//     std::cout << expectedSumOfN-actualSumofN;
+
+//     return 0;
+// }

@@ -35,9 +35,11 @@ Space complexity:   O(1)
 //Approach 2
 int main()
 {
+	std::ios_base::sync_with_stdio(false);
+	std::cin.tie(NULL);
 	long long n;
 	std::cin >> n;
-	cout << n << " ";
+	std::cout << n << " ";
 
 	while (n > 1)
 	{
@@ -45,7 +47,7 @@ int main()
 			n = (3 * n) + 1;
 		else
 			n >>= 1;    //Divide n by 2
-		cout << n << " ";
+		std::cout << n << " ";
 	}
 	return 0;
 }
