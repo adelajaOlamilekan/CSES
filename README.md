@@ -1,2 +1,2 @@
 # CSES
-This is an archive to my solution to CSES problems
+This is my solution archive to CSES (Code Submission Evaluation System) algorithmic problems.
